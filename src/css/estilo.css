@@ -62,7 +62,7 @@ main{
 }
 .gutsBerserkerOpta{
     width: 100%;
-    height: 35vh;
+    height: 45vh;
     align-items: center;
     text-align: center;
     display: grid;
@@ -132,4 +132,13 @@ footer{
     background:var(--bgcolor2);
     width: 100%;
     height: 30vh;
+}
+@media(max-width:768px){
+    .protecaoAntiacaroCaskaContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .textoAcaroCaska{
+        font-size: 1.5rem;
+    }
 }
