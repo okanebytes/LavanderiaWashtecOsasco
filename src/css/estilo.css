@@ -1,0 +1,135 @@
+:root{
+    --bgcolor1:#30355F; 
+    --bgcolor2:#0E0F22; 
+    --fontColor1:#30355F;
+    --fontColor2:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: var(--bgcolor1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    color: var(--fontColor2);
+}
+header h2:hover{
+    color: var(--bgcolor2);
+}
+main{
+    background: var(--bgcolor2);
+    color: var(--fontColor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    width: 100%;
+}
+.titPrincipal{
+    padding-bottom: 2.5%;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.paragPrincipal{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.servicos{
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: lighter;
+    margin:5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.nossosServicos{
+    font-size: clamp(0.1rem, 2vw, 2rem);
+    display: flex;
+    flex-direction: column;
+}
+.ourservices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 5%;
+}
+.gutsBerserkerOpta{
+    width: 100%;
+    height: 35vh;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.gutsOpta{
+    display: flex;
+    color: var(--fontColor1);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.gutsOptaItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+.gutsOptaItem h3{
+    text-align: center;
+
+}
+.optaAlign{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.protecaoAntiacaroCaskaContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.protecaoAntiacaroCaska{
+    width:42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.protecaoAntiacaroCaska img{
+    max-width: 300px;
+}
+.textoAcaroCaska{
+    font-size:clamp(0.1rem, 2vw, 2rem);
+
+    text-align: center;
+    max-width: 38%;
+}
+.midlandMapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fontColor2);
+    background:var(--bgcolor2);
+    width: 100%;
+    height: 30vh;
+}
