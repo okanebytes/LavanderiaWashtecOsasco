@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="shortcut icon" href="./src/assets/logo1.png" type="image/x-icon">
     <title>Whastec Osasco</title>
 </head>
 
@@ -12,10 +13,29 @@
     <header>
         <img src="./src/assets/logo1.png" alt="">
         <h2>Localização</h2>
+
+        <!-- Novo Menu Mobile que cobre a tela toda -->
+        <nav class="menuMobile">
+            <div class="menuToggle" onclick="toggleMenu()">☰</div>
+
+            <div class="menuOverlay" id="menuItems">
+                <div class="closeBtn" onclick="toggleMenu()">✖</div>
+                <ul>
+                    <!-- <li><a href="#servicos" onclick="toggleMenu()">Serviços</a></li> -->
+                    <!-- <li><a href="#motivos" onclick="toggleMenu()">Por que escolher?</a></li> -->
+                    <!-- <li><a href="#protecao" onclick="toggleMenu()">Proteção</a></li> -->
+                    <li><a href="#loc" onclick="toggleMenu()">Localização</a></li>
+                    <!-- <li><a href="#contato" onclick="toggleMenu()">Contato</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+
+
     </header>
     <main>
         <h1 class="titPrincipal">WASHTEC OSASCO</h1>
-        <p class="paragPrincipal">Lavanderia com tingimento personalizado, <br>qualidade,  atendimento dedicado e peças
+        <p class="paragPrincipal">Lavanderia com tingimento personalizado, <br>qualidade, atendimento dedicado e peças
             renovadas.</p>
     </main>
     <div class="servicos">
@@ -23,7 +43,7 @@
             <h1>NOSSOS SERVIÇOS</h1>
             <div class="ourservices">
                 <img id="catioro" src="./src/assets/cachorroImg.png" alt="">
-                <h3 class="catioroTextinho">contamos com lavanderia, <br> passadoria, tingimento profissional, <br> secagem e reparos de roupas</h3>
+                <h3 class="catioroTextinho">contamos com lavanderia, <br> passadoria, tingimento profissional, </h3>
             </div>
         </div>
     </div>
@@ -31,21 +51,21 @@
     <div class="gutsBerserkerOpta">
         <div class="gutsOptaItem">
             <div class="optaAlign">
-            <h3>MELHORES PREÇOS</h3>
+                <h3>MELHORES PREÇOS</h3>
                 <img src="./src/assets/apertoDeMao.png" alt="">
                 <h4>Oferecemos um serviço de qualidade, <br> com os preços mais acessíveis!</h4>
             </div>
         </div>
         <div class="gutsOptaItem">
             <div class="optaAlign">
-            <h3>SERVIÇO DE QUALIDADE!</h3>
+                <h3>SERVIÇO DE QUALIDADE!</h3>
                 <img src="./src/assets/qualidadeSinal.png" alt="">
                 <h4>Os melhores e único serviço de <br> tingimento de Osasco!</h4>
             </div>
         </div>
         <div class="gutsOptaItem">
             <div class="optaAlign">
-            <h3>ROUPA NOVINHA!</h3>
+                <h3>ROUPA NOVINHA!</h3>
                 <img src="./src/assets/roupaNovinha.png" alt="">
                 <h4>Restauração de roupas <br> com lavagem e tingimento de qualidade!</h4>
             </div>
@@ -66,16 +86,32 @@
     </div>
 
     <div class="midlandMapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7875094648243!2d-46.78117358821568!3d-23.540143878726056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff0d306bdf01%3A0x7d2fa96e6eb9f575!2sR.%20Sal%C3%A9m%20Bechara%2C%20412%20-%20Centro%2C%20Osasco%20-%20SP%2C%2006018-180!5e0!3m2!1spt-BR!2sbr!4v1747106402620!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            id="loc"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7875094648243!2d-46.78117358821568!3d-23.540143878726056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff0d306bdf01%3A0x7d2fa96e6eb9f575!2sR.%20Sal%C3%A9m%20Bechara%2C%20412%20-%20Centro%2C%20Osasco%20-%20SP%2C%2006018-180!5e0!3m2!1spt-BR!2sbr!4v1747106402620!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <footer class="grifithLixoso">
         <div class="contatos">
 
-            <a href="https://www.instagram.com/washtecosasco?igsh=MTh6bnowZDAzMHZncw=="><img src="./src/assets/instagram.png" alt=""></a>
+            <a href="https://www.instagram.com/washtecosasco?igsh=MTh6bnowZDAzMHZncw=="><img
+                    src="./src/assets/instagram.png" alt=""></a>
             <a href=""><img src="./src/assets/whatsapp.png" alt=""></a>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuItems');
+            const isVisible = menu.style.display === 'flex';
+            menu.style.display = isVisible ? 'none' : 'flex';
+        }
+    </script>
+
+
+
 </body>
 
 </html>

@@ -146,6 +146,67 @@ footer{
     width: 100%;
     height: 30vh;
 }
+.menuMobile {
+    display: none;
+    background-color: var(--bgcolor1);
+    padding: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+.menuToggle {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.menuOverlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+}
+
+.menuOverlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuOverlay li {
+    margin: 20px 0;
+}
+
+.menuOverlay li a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .menuMobile {
+        display: block;
+    }
+}
+
+
+
 @media(max-width:768px){
     .protecaoAntiacaroCaskaContainer{
         display: flex;
@@ -163,4 +224,8 @@ footer{
     .gutsBerserkerOpta{
         margin-bottom: 25%;
     }
+    /* }
+        .menuMobile {
+        display: block;
+    } */
 }
