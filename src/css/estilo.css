@@ -228,4 +228,7 @@ footer{
         .menuMobile {
         display: block;
     } */
+     #localizaAi{
+        display: none;
+     }
 }
