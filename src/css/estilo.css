@@ -212,6 +212,11 @@ footer{
     color: white;
     cursor: pointer;
 }
+#localizaAi a{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
 
 @media(max-width:768px){
     .menuMobile {
