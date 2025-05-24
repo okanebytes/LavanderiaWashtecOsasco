@@ -227,6 +227,9 @@ footer{
 
 
 @media(max-width:768px){
+    #imagem{
+        display: none;
+    }
     .protecaoAntiacaroCaskaContainer{
         display: flex;
         flex-direction: column;
@@ -239,7 +242,7 @@ footer{
         font-size: 1.5em;
     }
     .gutsOptaItem{
-        margin: 0 auto;
+        margin: 10px auto;
         padding: 20px 0px 20px 0px;
         height: 10vh;
     }
@@ -252,6 +255,12 @@ footer{
     .gutsBerserkerOpta{
         margin-top: 25%;
         margin-bottom: 2%;
+    }
+    header{
+        margin-bottom: 50px;
+    }
+    main{
+        margin-bottom: 7%;
     }
     /* }
         .menuMobile {
